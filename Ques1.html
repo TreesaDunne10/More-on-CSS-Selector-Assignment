@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Task B-1 */
+        nav a {
+            color: green;
+        }
+
+        /*Task B-2*/
+        nav > h2 {
+            color: red;
+            background-color: white;
+        }
+
+        /*Task B-3*/
+        ul + p {
+            color: red;
+        }
+
+        /*task C-1*/
+        a[href] {
+            color: red;
+            text-decoration: none;
+        }
+
+        /*task C-2*/
+        a[class="active"] {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /*task C-3*/
+        a[target="_self"] {
+            background-color: lightgray;
+        }
+
+        /*task D-1*/
+        p:last-child::after {
+            content: "...";
+        }
+
+        /*task D-2*/
+        li::marker {
+            color: green;
+        }
+
+        /*task D-3*/
+        p:nth-child(even)::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TOI</h2>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_self" class="active">About</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+
+            <p>The times of India</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius expedita nemo, dignissimos ab eveniet perferendis quibusdam aliquid qui, quaerat non ipsa commodi unde fugit nesciunt ea autem quidem corporis ullam.</p>
+            <p>read more articles</p>
+        </nav>
+    </header>
+</body>
+</html>
